@@ -56,6 +56,10 @@
     list-style: none;
     text-decoration: none;
 }
+.navTopLinks:hover{
+    color:#fff;
+
+}
 
 .navTopLinks:hover{
     background-color: #745300;
@@ -66,10 +70,17 @@
 .nav-item {
     color: #fff;
 }
+.nav-item:hover{
+    color: #745300;
+}
 
 
 .nav-link {
     color: #fff;
+}
+.nav-link:hover{
+    color: #fff;
+
 }
 
 .dropdown-menu{
@@ -79,17 +90,6 @@
 .dropdown-item{
     color: #fff;
 }
-
-
-
-
-
-
-
-
-
-  
-    
 
 
 
@@ -163,6 +163,8 @@ aside{
 }
 
 .div__Fila1{
+    animation: fadeIn;
+    animation-duration: 2s;
     background-color: #042D00;
     width: 400px;
     height: 300px;
@@ -318,6 +320,7 @@ aside{
 .Menu__Footer__ItemDos:hover{
     background-color: #745300;
     
+    
     transition: 0.5s;
 }
                        /*********************Fin del Pie de Pagina***********************/
@@ -390,6 +393,7 @@ aside{
     list-style: none;
 }
 
+
 .Enlaces-Item{
     justify-content: center;
     background-color: #004603;
@@ -397,6 +401,8 @@ aside{
     width: 350px;
     height: 250px;
     text-align: center;
+    animation: fadeIn;
+    animation-duration: 20s;
 
 }
 
@@ -452,9 +458,11 @@ aside{
 .nav_Tienda_Menu_Item{
     padding: 8px 12px;
     border-radius: 30px;
+    
 }
 .nav_Tienda_Menu_Item:hover{
     background-color: #745300;
+    height: 30px;
     transition: 0.5s;
 }
 
@@ -463,6 +471,9 @@ aside{
     color: #fff;
     text-decoration: none;
     text-align: center;
+}
+.nav_Tienda_Menu_Texto:hover{
+    color:#fff;
 }
 
 
@@ -623,7 +634,7 @@ aside{
 
 
 
-/*Media queries index.html**********************/
+/***********************Media queries index.html**********************/
              
 
  @media screen and (min-width: 320px) {
@@ -797,8 +808,8 @@ font-weight: bold;
     .Enlaces{
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(1,400px);
-        grid-template-rows: repeat(4,100px);
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(4,auto);
         
         
         list-style: none;
@@ -810,8 +821,11 @@ font-weight: bold;
         width: 250px;
         height: 200px;
         text-align: center;
+        animation: fadeIn;
+        animation-duration: 2s;
     
     }
+    
 
     .navTienda{
         display: flex;
@@ -829,6 +843,7 @@ font-weight: bold;
         text-decoration: none;
         text-align: center;
     }
+    
 
     .Enlaces-Item-Texto{
         color: #fff;
@@ -836,6 +851,9 @@ font-weight: bold;
     
         text-decoration: none;
     
+    }
+    .Enlaces-Item-Texto:hover{
+        color: #fff;
     }
 
     .TituloTienda{
@@ -855,7 +873,7 @@ font-weight: bold;
         justify-content: center;
         font: 1.5em sans-serif;
         background-color: #004603;
-        width: 300px;
+        width: 100%;
         height: 50px;
         color: #fff;
         text-align: center;
@@ -865,7 +883,7 @@ font-weight: bold;
     .Titulo{
         font-size: 1em;
     }
-       
+   
 }
 
 
@@ -888,8 +906,11 @@ font-weight: bold;
         width: 350px;
         height: 250px;
         text-align: center;
+        animation: fadeIn;
+        animation-duration: 2s;
     
     }
+    
 
     .navTienda{
         display: flex;
@@ -943,7 +964,7 @@ font-weight: bold;
     .Titulo{
         font-size: 2em;
     }
-
+  
     
 
    
@@ -955,7 +976,7 @@ font-weight: bold;
 
 
 
-/******MEDIA QUERIES DE CONTACTO********/
+/******************MEDIA QUERIES DE CONTACTO**********************/
 
 @media screen and (min-width: 320px) {
 
@@ -1157,7 +1178,7 @@ font-weight: bold;
 
 
 
-/*******Media queries footer*****************/
+/************************Media queries footer*****************/
 
 @media screen and (min-width:320px) {
     .Footer{
@@ -1191,7 +1212,7 @@ font-weight: bold;
         display: flex;
         justify-content: center;
         
-        padding: 8px 5px;
+        padding: 8px 8px;
         height: 30px;
         border-radius: 30px;
         
@@ -1199,6 +1220,7 @@ font-weight: bold;
     
     .Menu__Footer__ItemUno:hover{
         background-color: #745300;
+        
         transition: 0.5s;
     }
     
@@ -1208,6 +1230,12 @@ font-weight: bold;
         list-style: none;
         font-size: 0.9em;
         
+        
+    }
+
+    .Footer__Texto:hover{
+        color: #fff;
+
     }
     
     
@@ -1215,8 +1243,9 @@ font-weight: bold;
     
     .Menu__FooterDos{
         
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns:repeat(1,auto);
+        grid-template-rows: repeat(1,80px);
         list-style: none;
         text-align: center;
         
@@ -1232,13 +1261,14 @@ font-weight: bold;
     }
     .Menu__Footer__ItemDos:hover{
         background-color: #745300;
+        
         transition: 0.5s;
     }
 
     .IconoFooter{
     
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        width: 40px;
         
     }
     .IconoFooter2{
@@ -1309,7 +1339,7 @@ font-weight: bold;
     
     .Menu__Footer__ItemUno:hover{
         background-color: #745300;
-        height: 50px;
+        height: 70px;
         transition: 0.4s;
     }
     
@@ -1343,7 +1373,7 @@ font-weight: bold;
     }
     .Menu__Footer__ItemDos:hover{
         background-color: #745300;
-        height: 80px;
+        height: 100px;
         transition: 0.5s;
     }
 
@@ -1368,3 +1398,4 @@ font-weight: bold;
     }
 
 }
+
